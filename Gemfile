@@ -42,3 +42,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # use MongoDB
 gem 'mongoid'
+# A lightning fast JSON:API serializer for Ruby Objects. (by Netflix team)
+gem 'fast_jsonapi'
+
