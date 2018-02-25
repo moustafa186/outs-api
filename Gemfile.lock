@@ -24,6 +24,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_model_serializers (0.10.7)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (5.1.5)
       activesupport (= 5.1.5)
       globalid (>= 0.3.6)
@@ -43,6 +48,8 @@ GEM
     bson (4.3.0-java)
     builder (3.2.3)
     byebug (10.0.0)
+    case_transform (0.2)
+      activesupport
     concurrent-ruby (1.0.5)
     concurrent-ruby (1.0.5-java)
     crass (1.0.3)
@@ -52,11 +59,6 @@ GEM
     eventmachine (1.2.5-java)
     eventmachine (1.2.5-x64-mingw32)
     eventmachine (1.2.5-x86-mingw32)
-    fast_jsonapi (1.0.17)
-      activerecord (~> 5.0)
-      activesupport (~> 5.0)
-      multi_json (~> 1.12)
-      oj (~> 3.3)
     ffi (1.9.22)
     ffi (1.9.22-java)
     ffi (1.9.22-x64-mingw32)
@@ -65,6 +67,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    jsonapi-renderer (0.2.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -83,7 +86,6 @@ GEM
     mongoid (6.3.0)
       activemodel (~> 5.1)
       mongo (>= 2.5.0, < 3.0.0)
-    multi_json (1.13.1)
     nio4r (2.2.0)
     nio4r (2.2.0-java)
     nokogiri (1.8.2)
@@ -93,7 +95,6 @@ GEM
       mini_portile2 (~> 2.3.0)
     nokogiri (1.8.2-x86-mingw32)
       mini_portile2 (~> 2.3.0)
-    oj (3.4.0)
     rack (2.0.4)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
@@ -162,8 +163,8 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  active_model_serializers
   byebug
-  fast_jsonapi
   listen (>= 3.0.5, < 3.2)
   mongoid
   rails (~> 5.1.4)
